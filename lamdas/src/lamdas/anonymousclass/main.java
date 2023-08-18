@@ -6,6 +6,7 @@ import java.util.List;
 import lamdas.Apple;
 import lamdas.ApplePredicate;
 
+/*args: pink blue yellow */
 public class main {
 
 	

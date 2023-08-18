@@ -7,6 +7,7 @@ import java.util.List;
 
 import lamdas.Apple;
 
+/*args: "pink:100" "blue:120" "yellow:20" */
 public class OthersCases {
 
 	/*Comparators*/
