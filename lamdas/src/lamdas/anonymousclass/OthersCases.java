@@ -25,18 +25,28 @@ public class OthersCases {
 			inventory.add(apple);
 			
 		}
-		/**/
+		/*
 		inventory.sort(new Comparator<Apple>() {
 			public int compare(Apple a1, Apple a2) {
 				BigDecimal a1Weight = new BigDecimal(a1.getWeight());
 				BigDecimal a2Weight = new BigDecimal(a2.getWeight());
 				return a1Weight.compareTo(a2Weight);
 			}
-		});
+		})*/;
 		
 		for (Apple apple: inventory) {
 			System.out.printf("Apple %1$d %2$s %3$f \n",
 					apple.getId(), apple.getColor(), apple.getWeight());
 		}
-	}
+		
+		/*using lambdas*/
+		
+		inventory.sort((Apple a1, Apple a2) -> {
+			BigDecimal a1Weight = new BigDecimal(a1.getWeight());
+			BigDecimal a2Weight = new BigDecimal(a2.getWeight());
+			return a1Weight.compareTo(a2Weight);});
+		
+	}	
 }
+		
+		
